@@ -44,7 +44,7 @@ body header .head div .nav{
 }
 body header .head div .nav a{
     margin-right: 2rem;
-    font-size: 0.6rem;
+    font-size: 1.2rem;
     }
 body header .head div .nav a:last-child{
     margin: 0;
@@ -59,4 +59,24 @@ body header .head div .nav a.activer:hover
 body header .head div .nav a.activer:active{
     color: #69D2F2;
     background:url(http://futures.longrun.com.hk/share/nav_arrow.png) no-repeat center bottom;
+}
+
+body header .navButton{
+    width: 100.2rem;
+    height: 8.8rem;
+    min-width: 100.2rem;
+    min-height: 8.8rem;
+    margin: 0 auto;
+    background-color: #F4F5F7;
+}
+body header .navButton .nav2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #1954A5;
+    color: #ffffff;
+}
+body header .navButton .nav2 a{
+    font-size: 1.2rem;
+    padding: 1rem;
 }
