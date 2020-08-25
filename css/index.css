@@ -3,9 +3,10 @@ body{
 }
 body header .head{
     width: 100.2rem;
-    height: 8.8rem;
+    /* 取消额外的高度占用 */
+    /* height: 8.8rem; */
+    /* min-height: 8.8rem; */
     min-width: 100.2rem;
-    min-height: 8.8rem;
     margin: 0 auto;
     background-color: #F4F5F7;
     display: flex;
@@ -21,12 +22,19 @@ body header .head div div span{
 }
 @font-face {
     font-family: 'iconfont';  /* project id 2020796 */
-    src: url('//at.alicdn.com/t/font_2020796_3lbyucxkjvf.eot');
-    src: url('//at.alicdn.com/t/font_2020796_3lbyucxkjvf.eot?#iefix') format('embedded-opentype'),
-    url('//at.alicdn.com/t/font_2020796_3lbyucxkjvf.woff2') format('woff2'),
-    url('//at.alicdn.com/t/font_2020796_3lbyucxkjvf.woff') format('woff'),
-    url('//at.alicdn.com/t/font_2020796_3lbyucxkjvf.ttf') format('truetype'),
-    url('//at.alicdn.com/t/font_2020796_3lbyucxkjvf.svg#iconfont') format('svg');
+    src: url('//at.alicdn.com/t/font_2020796_i9yds8b0j3.eot');
+    src: url('//at.alicdn.com/t/font_2020796_i9yds8b0j3.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_2020796_i9yds8b0j3.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_2020796_i9yds8b0j3.woff') format('woff'),
+    url('//at.alicdn.com/t/font_2020796_i9yds8b0j3.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_2020796_i9yds8b0j3.svg#iconfont') format('svg');
+}
+.icon {
+    width: 1em; 
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
 }
 .iconfont{
     font-family:"iconfont" !important;
@@ -35,6 +43,10 @@ body header .head div div span{
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
+}
+body header .head div div .cn,
+body header .head div div .cn:hover{
+    color: #4FD0F1;
 }
 body header .head div .nav{
     margin-top: 3rem;
@@ -53,19 +65,18 @@ body header .head div .nav a:hover{
     color: #69D2F2;
     background:url(http://futures.longrun.com.hk/share/nav_arrow.png) no-repeat center bottom;
 }
-body header .head div .nav a.activer:link
-body header .head div .nav a.activer:visited
-body header .head div .nav a.activer:hover
-body header .head div .nav a.activer:active{
+body header .head div .nav a.activer{
     color: #69D2F2;
     background:url(http://futures.longrun.com.hk/share/nav_arrow.png) no-repeat center bottom;
 }
 
 body header .navButton{
     width: 100.2rem;
-    height: 8.8rem;
+/* 取消额外的高度占用 */
+    /* height: 8.8rem; */
+    /* min-height: 8.8rem; */
     min-width: 100.2rem;
-    min-height: 8.8rem;
+
     margin: 0 auto;
     background-color: #F4F5F7;
 }
@@ -74,9 +85,228 @@ body header .navButton .nav2{
     justify-content: flex-start;
     align-items: center;
     background-color: #1954A5;
+    color: #A5B6D4;
+}
+body header .navButton .nav2 a:hover{
     color: #ffffff;
 }
 body header .navButton .nav2 a{
     font-size: 1.2rem;
     padding: 1rem;
+}
+body .main{
+    width: 100rem;
+    margin: 0 auto;
+    height: 26.3rem;
+    border: #d4d4d4 0.1rem solid;
+    background-color: #F1F6F8;
+}
+body .main svg{
+    height: 24rem;
+    width: 7%;
+    float: left;
+    color: #D2D2D2;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    background-color: #F1F6F8;
+}
+body .main .banner{
+    float: left;
+    width: 86rem;
+    height: 24rem;
+    overflow: hidden;
+    /* box-sizing: border-box; */
+    /* -moz-box-sizing:border-box; */
+    /* -webkit-box-sizing:border-box; */
+    /* position: relative; */
+}
+body .main .banner .navImg{
+    width: 86rem;
+    height: 24rem;
+    /* position: absolute; */
+}
+body .time{
+    width: 100.2rem;
+    height: 5rem;
+    margin: 0 auto;
+    background-image: url(http://futures.longrun.com.hk/images/img_top.png);
+    background-repeat: no-repeat;
+}
+body .time ul{
+    width:900px; 
+    height: 1.6rem;
+    padding: 0rem 0rem 0rem 0rem;
+    margin-top: -2rem;
+}
+body .time ul li{
+    margin: 1rem 0.4rem 0 1rem;
+    padding: 0rem 0.4rem 0 1rem;
+    font-size: 1.4rem;
+    float: left;
+    text-align: center;
+    line-height: 2.5rem;
+}
+body .time ul li .icon{
+    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+}
+body .time ul li .a
+body .time ul li .f{
+    font-size: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+body .download{
+    width: 100.2rem;
+    height: 4rem;
+    margin: 0 auto;
+    background-color: #F0F0F0;
+}
+body .download ul li{
+    float: left;
+    border: #cccccc 0.1rem solid;
+    height: 100%;
+    width: 25%;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    color: #0C5DC4;
+    font-size: 1.4rem;
+    padding: 1rem 1rem 1rem 1rem;
+}
+body .download ul li a i{
+    color: #707070;
+}
+body .body{
+    width: 97rem;
+    height: 62.7rem;
+    padding: 0rem 1.5rem;
+    background-color: #fff;
+    margin: 0 auto;
+    border: #d4d4d4 0.1rem solid;
+    display: flex;
+}
+body .body .bodyLeft{
+    border: #DDD 0.1rem solid;
+    height: 60rem;
+    width:  60%;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+body .body .bodyLeft .newTable{
+    margin-top: 2rem;
+    padding-left: 2rem;
+}
+body .body .bodyLeft .newTable ul{
+    padding-bottom: 4rem;
+    border-bottom: 0.2rem solid #43b0ce;
+}
+body .body .bodyLeft .newTable ul li{
+    float: left;
+    height: 1.6rem;
+    background-color: #0F4DA2;
+    color: white;
+    padding: 0.8rem;
+    margin-right: 0.2rem;
+}
+body .body .bodyLeft .newTable ul li.active{
+    background-color: #43B0CE;
+}
+body .body .bodyLeft .newTable ul li:hover{
+    background-color: #43B0CE;
+}
+body .body .bodyLeft .newTable ul span{
+    margin-top: 1.5rem;
+    padding-right: 1rem;
+    float: right;
+}
+body .body .bodyLeft .newTable table{
+    margin-top: 1rem;
+}
+body .body .bodyLeft .newTable tbody tr td i.iconfont{
+    font-size: 0.2rem;
+    width: 0.1rem;
+    height: 0.1rem;
+}
+body .body .bodyLeft .newTable tbody tr td span.date{
+    float: right;
+    padding-right: 1rem;
+}
+body .body .bodyRight{
+    height: 59.22rem;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    box-sizing: border-box;
+}
+body .body .bodyRight h2{
+    border-bottom: #dfdfdf 0.1rem solid;
+    color: #282828;
+    padding: 0.7rem;
+    font-size: 2rem;
+}
+body .body .bodyRight table{
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+body .body .bodyRight table tr td{
+    padding-left: 0.1rem;
+}
+body .body .bodyRight table tr td a{
+    color: #2D63AD;
+}
+body .body .bodyRight table tr td span{
+    float: right;
+}
+body .body .bodyRight>div{
+    margin-left: 1rem;
+}
+body .body .bodyRight div div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+body .body .bodyRight div div>span{
+    color: #878787;
+}
+body .body .bodyRight div table{
+    width: 100%;
+    background-color: #E6E6E6;
+    text-align: center;
+    line-height: 2.3rem;
+}
+body .body .bodyRight div table tr td{
+    border: 0.1rem solid rgb(230, 230, 230);
+    width: 13.3%;
+    cursor: pointer;
+    margin: 0.1rem 0.1rem 0 0;
+    background-color: rgb(240, 240, 240);
+    color: rgb(85, 85, 85);
+}
+body .body .bodyRight div table tr td:hover{
+    background-color: #c60;
+    color: #FEFDFA;
+}
+body .body .bodyRight div table tr td.m{
+    background-color: #c60;
+    color: #FEFDFA;
+}
+body footer{
+    background-color: #D7D7D7;
+    height: 5.5rem;
+    width: 100%;
+    margin-top: 3rem;
+}
+body footer div{
+    margin: 0 auto;
+    width: 96rem;
+    font-size: 1.1rem;
+    color: #6d6d6d;
+    padding: 10px 0 0 20px;
+}
+body footer div a strong{
+    float: right;
 }
