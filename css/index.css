@@ -136,18 +136,19 @@ body .time{
     background-repeat: no-repeat;
 }
 body .time ul{
-    width:900px; 
-    height: 1.6rem;
-    padding: 0rem 0rem 0rem 0rem;
+    width: 100rem; 
+    height: 5rem;
+    padding: 0.6rem 0.4rem 0rem 0.1rem;
     margin-top: -2rem;
 }
 body .time ul li{
-    margin: 1rem 0.4rem 0 1rem;
-    padding: 0rem 0.4rem 0 1rem;
-    font-size: 1.4rem;
+    margin: 1rem 0.4rem 0 0.4rem;
+    padding: 0rem 1rem 0 2rem;
+    font-size: 1.2rem;
     float: left;
     text-align: center;
     line-height: 2.5rem;
+    box-sizing: border-box;
 }
 body .time ul li .icon{
     font-size: 2rem;

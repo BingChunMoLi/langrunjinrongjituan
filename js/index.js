@@ -1,13 +1,11 @@
 /*
  * @Author: 冰彦糖
  * @Date: 2020-08-25 10:16:02
- * @LastEditTime: 2020-08-26 09:45:37
+ * @LastEditTime: 2020-08-26 11:01:42
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \浪润金融集团\js\index.js
  */
-(window.onload = function () {
-    // 判断当前页面的导航栏
     const path = window.location.href;
     let nav = $('.nav');
     let lis = nav.children("a");
@@ -49,6 +47,42 @@
             navia = 0;
         }
     }
+    
+function formatDate(time,format='YY-MM-DD hh:mm:ss'){
+    var date = new Date(time);
+    var year = date.getFullYear(),
+        month = date.getMonth()+1,
+        day = date.getDate(),
+        hour = date.getHours(),
+        min = date.getMinutes(),
+        sec = date.getSeconds();
+    var preArr = Array.apply(null,Array(10)).map(function(elem, index) {
+        return '0'+index;
+    });
+    var newTime = format.replace(/YY/g,year)
+        .replace(/MM/g,preArr[month]||month)
+        .replace(/DD/g,preArr[day]||day)
+        .replace(/hh/g,preArr[hour]||hour)
+        .replace(/mm/g,preArr[min]||min)
+        .replace(/ss/g,preArr[sec]||sec);
+    return newTime;
+};
     const dateTime = $(".dateTime");
-
-})()
+    let ff = null;
+    function fun() {
+        let time = new Date();
+        let localtime = time.getTime();
+        let localOffset = time.getTimezoneOffset()*60000;
+        let utc = localtime + localOffset;
+        let beijing = new Date(utc + (3600000*8));
+        $(dateTime[0]).html(formatDate(new Date(utc + (3600000*8)),'DD日hh:mm:ss'));
+        $(dateTime[1]).html(formatDate(new Date(utc + (3600000*-4)),'DD日hh:mm:ss'));
+        $(dateTime[2]).html(formatDate(new Date(utc + (3600000*-5)),'DD日hh:mm:ss'));
+        $(dateTime[3]).html(formatDate(new Date(utc + (3600000*1)),'DD日hh:mm:ss'));
+        $(dateTime[4]).html(formatDate(new Date(utc + (3600000*9)),'DD日hh:mm:ss'));
+        $(dateTime[5]).html(formatDate(new Date(utc + (3600000*2)),'DD日hh:mm:ss'));
+        clearInterval(ff);
+        ff = setInterval(fun, 1000);
+    }
+    fun();
+    
