@@ -1,7 +1,7 @@
 /*
  * @Author: 冰彦糖
  * @Date: 2020-08-25 10:16:02
- * @LastEditTime: 2020-08-26 11:01:42
+ * @LastEditTime: 2020-08-26 17:20:47
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \浪润金融集团\js\index.js
@@ -47,19 +47,19 @@
             navia = 0;
         }
     }
-    
+
 function formatDate(time,format='YY-MM-DD hh:mm:ss'){
-    var date = new Date(time);
-    var year = date.getFullYear(),
+    let date = new Date(time);
+    let year = date.getFullYear(),
         month = date.getMonth()+1,
         day = date.getDate(),
         hour = date.getHours(),
         min = date.getMinutes(),
         sec = date.getSeconds();
-    var preArr = Array.apply(null,Array(10)).map(function(elem, index) {
+    let preArr = Array.apply(null,Array(10)).map(function(elem, index) {
         return '0'+index;
     });
-    var newTime = format.replace(/YY/g,year)
+    let newTime = format.replace(/YY/g,year)
         .replace(/MM/g,preArr[month]||month)
         .replace(/DD/g,preArr[day]||day)
         .replace(/hh/g,preArr[hour]||hour)
@@ -85,4 +85,103 @@ function formatDate(time,format='YY-MM-DD hh:mm:ss'){
         ff = setInterval(fun, 1000);
     }
     fun();
+    
+    function rili(d) {
+        var month_olympic = [31,29,31,30,31,30,31,31,30,31,30,31];
+        var month_normal = [31,28,31,30,31,30,31,31,30,31,30,31];
+        
+        // 当前年份
+        year = d.getFullYear();
+        // 当前月份
+        month = d.getMonth();
+        // 当前天数
+        day = d.getDay();
+        // 当月首天
+        let da = new Date();
+        da.setDate(1);
+        // 上一月
+        let dat = new Date();
+        dat.setMonth(month - 1);
+        // 下一月
+        let datt = new Date();
+        datt.setMonth(month + 1);
+        let str = "";
+        $('.now').html(year+ '年' + (month + 1) + '月');
+        $('#rili').html('<tr><th><strong>日</strong></th><th>一</th><th>二</th><th>三</th><th>四</th><th>五</th><th><strong>六</strong></th></tr>');
+        str += '<tr>';
+        let days = daysMonth(year,month);
+        let dy = daysMonth(year,dat.getMonth());
+        let temp = 0;
+        for (let i = dy-da.getDay()+1; i <= dy; i++) {
+            str += "<td>"+ i +"</td>";
+            temp++;
+        }
+        for(let i=1; i<=days; i++){
+            if(i ==d.getDate()){
+                if(new Date().getMonth() == d.getMonth()){
+                    str += "<td class='m'>" + i + "</td>";
+                }else{
+                    str += "<td>" + i + "</td>";
+                }
+            }else{
+                str += "<td>" + i + "</td>";
+            }
+            temp++;
+            if(temp % 7 ==0){
+                str+="</tr><tr>";
+            }
+        }
+        if(temp != 42){
+            let tt = 1;
+            for (let i = temp; i < 42; i++) {
+                str +="<td>" + tt +"</td>";
+                tt++;
+                temp++;
+                if(temp % 7 ==0){
+                    str+="</tr><tr>";
+                }
+            }
+        }
+        str +="</tr>"
+        $('#rili').append(str);
+        function daysMonth(year,month){
+            if(year % 100 == 0){
+                if(year % 400==0){
+                    return (month_olympic[month]);
+                }else{
+                    return (month_normal[month]);
+                }
+            }else{
+                if(year % 4 == 0){
+                    return (month_olympic[month]);
+                }else{
+                    return (month_normal[month]);
+                }
+            }
+        }
+        $('.leftRili').on('click',function () {
+            let dd = new Date();
+            dd.setMonth(d.getMonth()-1);
+            if(dd.getMonth() == 0){
+                dd.setMonth(11);
+                dd.setFullYear(d.getFullYear()-1);
+            }
+            rili(dd);
+        })
+        let yeartemp;
+        $('.rigthRili').on('click',function () {
+            let dd = new Date();
+            dd.setMonth(d.getMonth()+1);
+            if(dd.getMonth() == 12){
+                dd.setMonth(0);
+                dd.setFullYear(d.getFullYear()+1);
+                yeartemp = dd.getFullYear();
+            }
+            console.log('setyear',dd.getFullYear());
+            console.log('getyear',d.getFullYear());
+            rili(dd);
+        })
+    }
+    let d = new Date();
+    rili(d);
     

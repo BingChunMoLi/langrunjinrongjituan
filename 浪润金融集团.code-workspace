@@ -4,5 +4,14 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveHorn.Live Room ID Array": [
+			"76"
+		],
+		"liveHorn.Old Live Status Object": {
+			"76": false
+		},
+		"liveHorn.Live Status Object": {},
+		"liveHorn.Live NOP": 0
+	}
 }
