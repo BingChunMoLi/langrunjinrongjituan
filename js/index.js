@@ -1,7 +1,7 @@
 /*
  * @Author: 冰彦糖
  * @Date: 2020-08-25 10:16:02
- * @LastEditTime: 2020-08-26 17:20:47
+ * @LastEditTime: 2020-08-26 22:14:06
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \浪润金融集团\js\index.js
@@ -84,12 +84,11 @@ function formatDate(time,format='YY-MM-DD hh:mm:ss'){
         clearInterval(ff);
         ff = setInterval(fun, 1000);
     }
-    fun();
     
+    let d = new Date();
     function rili(d) {
         var month_olympic = [31,29,31,30,31,30,31,31,30,31,30,31];
         var month_normal = [31,28,31,30,31,30,31,31,30,31,30,31];
-        
         // 当前年份
         year = d.getFullYear();
         // 当前月份
@@ -98,7 +97,7 @@ function formatDate(time,format='YY-MM-DD hh:mm:ss'){
         day = d.getDay();
         // 当月首天
         let da = new Date();
-        da.setDate(1);
+        da.setFullYear(year,month,1);
         // 上一月
         let dat = new Date();
         dat.setMonth(month - 1);
@@ -109,9 +108,14 @@ function formatDate(time,format='YY-MM-DD hh:mm:ss'){
         $('.now').html(year+ '年' + (month + 1) + '月');
         $('#rili').html('<tr><th><strong>日</strong></th><th>一</th><th>二</th><th>三</th><th>四</th><th>五</th><th><strong>六</strong></th></tr>');
         str += '<tr>';
+        // 当月天数
         let days = daysMonth(year,month);
+        // 上月天数
         let dy = daysMonth(year,dat.getMonth());
         let temp = 0;
+        // dy:上月天数 da.getDay(): 当月首日星期几
+        console.log(da);
+        console.log(da.getDay());
         for (let i = dy-da.getDay()+1; i <= dy; i++) {
             str += "<td>"+ i +"</td>";
             temp++;
@@ -160,28 +164,18 @@ function formatDate(time,format='YY-MM-DD hh:mm:ss'){
             }
         }
         $('.leftRili').on('click',function () {
-            let dd = new Date();
-            dd.setMonth(d.getMonth()-1);
-            if(dd.getMonth() == 0){
-                dd.setMonth(11);
-                dd.setFullYear(d.getFullYear()-1);
-            }
-            rili(dd);
+            d.setMonth(d.getMonth()-1);
+            rili(d);
         })
-        let yeartemp;
         $('.rigthRili').on('click',function () {
-            let dd = new Date();
-            dd.setMonth(d.getMonth()+1);
-            if(dd.getMonth() == 12){
-                dd.setMonth(0);
-                dd.setFullYear(d.getFullYear()+1);
-                yeartemp = dd.getFullYear();
-            }
-            console.log('setyear',dd.getFullYear());
-            console.log('getyear',d.getFullYear());
-            rili(dd);
+            d.setMonth(d.getMonth()+1);
+            rili(d);
         })
     }
-    let d = new Date();
-    rili(d);
+    // window.onload = function(){
+        
+        rili(d);
+        fun();
+    // }
+    
     
