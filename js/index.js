@@ -1,7 +1,7 @@
 /*
  * @Author: 冰彦糖
  * @Date: 2020-08-25 10:16:02
- * @LastEditTime: 2020-08-26 22:14:06
+ * @LastEditTime: 2020-08-26 22:17:05
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \浪润金融集团\js\index.js
@@ -114,8 +114,6 @@ function formatDate(time,format='YY-MM-DD hh:mm:ss'){
         let dy = daysMonth(year,dat.getMonth());
         let temp = 0;
         // dy:上月天数 da.getDay(): 当月首日星期几
-        console.log(da);
-        console.log(da.getDay());
         for (let i = dy-da.getDay()+1; i <= dy; i++) {
             str += "<td>"+ i +"</td>";
             temp++;
@@ -163,19 +161,20 @@ function formatDate(time,format='YY-MM-DD hh:mm:ss'){
                 }
             }
         }
-        $('.leftRili').on('click',function () {
-            d.setMonth(d.getMonth()-1);
-            rili(d);
-        })
-        $('.rigthRili').on('click',function () {
-            d.setMonth(d.getMonth()+1);
-            rili(d);
-        })
+
     }
-    // window.onload = function(){
+    $('.leftRili').on('click',function () {
+        d.setMonth(d.getMonth()-1);
+        rili(d);
+    })
+    $('.rigthRili').on('click',function () {
+        d.setMonth(d.getMonth()+1);
+        rili(d);
+    })
+    window.onload = function(){
         
         rili(d);
         fun();
-    // }
+    }
     
     
