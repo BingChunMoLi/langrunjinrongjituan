@@ -116,15 +116,17 @@ body .main .banner{
     width: 86rem;
     height: 24rem;
     overflow: hidden;
-    /* box-sizing: border-box; */
-    /* -moz-box-sizing:border-box; */
-    /* -webkit-box-sizing:border-box; */
-    /* position: relative; */
+    box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
 }
-body .main .banner .navImg{
-    width: 86rem;
+body .main .banner div.navi{
+    width: 400%;
     height: 24rem;
-    /* position: absolute; */
+    float: left;
+}
+body .main .banner .navi .navImg{
+    float: left;
 }
 body .time{
     width: 100.2rem;
