@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-08-27 09:17:45
- * @LastEditTime: 2020-08-27 10:21:21
+ * @LastEditTime: 2020-08-27 10:30:11
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \浪润金融集团\page\Contact.html
@@ -93,7 +93,7 @@
     <div class="body">
         <div class="bodyLeft">
             <div class="newTable">
-                <table width="100%">
+                <table width="100%" id="tableInfo">
                     <tbody>
                         <tr><td><i class="iconfont">&#xe69b;</i><a href="">2020年8月20日LME开盘基本金属库存</a><span class="date">2020/8/20</span></td></tr>
                         <tr><td><i class="iconfont">&#xe69b;</i><a href="">2020年8月20日LME开盘基本金属库存</a><span class="date">2020/8/20</span></td></tr>
@@ -124,6 +124,13 @@
                         <tr><td><i class="iconfont">&#xe69b;</i><a href="">2020年8月20日LME开盘基本金属库存</a><span class="date">2020/8/20</span></td></tr>
                     </tbody>
                 </table>
+                <div id="pagination">
+                    <a onclick="firstPage()">首页</a>
+                    <a onclick="prevPage()">上一页</a>
+                    <a onclick="pnextPage()">下一页</a>
+                    <a onclick="lastPage()">尾页</a>
+                    <span id="numPage"></span>
+                </div>
             </div>
         </div>
         <div class="bodyRight">
