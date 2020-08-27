@@ -134,53 +134,19 @@ body .time{
     margin: 0 auto;
     background-image: url(http://futures.longrun.com.hk/images/img_top.png);
     background-repeat: no-repeat;
+    overflow: hidden;
+    /* text-align: center;*/
 }
 body .time ul{
     width: 100rem; 
-    height: 5rem;
-    padding: 0.6rem 0.4rem 0rem 0.1rem;
-    margin-top: -2rem;
+    height: 300%;
+    /* padding: 0.6rem 0.4rem 0rem 0.1rem; */
 }
-body .time ul li{
-    margin: 1rem 0.4rem 0 0.4rem;
-    padding: 0rem 1rem 0 2rem;
-    font-size: 1.2rem;
-    float: left;
+body .time ul .vi{
+    position: relative;
     text-align: center;
-    line-height: 2.5rem;
-    box-sizing: border-box;
-}
-body .time ul li .icon{
-    font-size: 2rem;
-    width: 2rem;
-    height: 2rem;
-}
-body .time ul li .a
-body .time ul li .f{
-    font-size: 1.5rem;
-    width: 1.5rem;
-    height: 1.5rem;
-}
-body .download{
-    width: 100.2rem;
-    height: 4rem;
-    margin: 0 auto;
-    background-color: #F0F0F0;
-}
-body .download ul li{
-    float: left;
-    border: #cccccc 0.1rem solid;
-    height: 100%;
-    width: 25%;
-    box-sizing: border-box;
-    -moz-box-sizing:border-box;
-    -webkit-box-sizing:border-box;
-    color: #0C5DC4;
+    line-height: 4rem;
     font-size: 1.4rem;
-    padding: 1rem 1rem 1rem 1rem;
-}
-body .download ul li a i{
-    color: #707070;
 }
 body .body{
     width: 97rem;
@@ -240,6 +206,7 @@ body .body .bodyLeft .newTable tbody tr td span.date{
 }
 body .body .bodyRight{
     height: 59.22rem;
+    width: 30rem;
     font-size: 1.2rem;
     margin-left: 1rem;
     box-sizing: border-box;
@@ -250,17 +217,17 @@ body .body .bodyRight h2{
     padding: 0.7rem;
     font-size: 2rem;
 }
-body .body .bodyRight table{
+body .body .bodyRight #rili{
     padding: 0.5rem;
     font-size: 1.2rem;
 }
-body .body .bodyRight table tr td{
+body .body .bodyRight #rili tr td{
     padding-left: 0.1rem;
 }
-body .body .bodyRight table tr td a{
+body .body .bodyRight #rili tr td a{
     color: #2D63AD;
 }
-body .body .bodyRight table tr td span{
+body .body .bodyRight #rili tr td span{
     float: right;
 }
 body .body .bodyRight>div{
@@ -275,13 +242,13 @@ body .body .bodyRight div div{
 body .body .bodyRight div div>span{
     color: #878787;
 }
-body .body .bodyRight div table{
+body .body .bodyRight div #rili{
     width: 100%;
     background-color: #E6E6E6;
     text-align: center;
     line-height: 2.3rem;
 }
-body .body .bodyRight div table tr td{
+body .body .bodyRight div #rili tr td{
     border: 0.1rem solid rgb(230, 230, 230);
     width: 13.3%;
     cursor: pointer;
@@ -289,13 +256,17 @@ body .body .bodyRight div table tr td{
     background-color: rgb(240, 240, 240);
     color: rgb(85, 85, 85);
 }
-body .body .bodyRight div table tr td:hover{
+body .body .bodyRight div #rili tr td:hover{
     background-color: #c60;
     color: #FEFDFA;
 }
-body .body .bodyRight div table tr td.m{
+body .body .bodyRight div #rili tr td.m{
     background-color: #c60;
     color: #FEFDFA;
+}
+body .body .bodyRight div .zx tr td{
+    padding: 0.4rem 1rem 0.4rem 0.4rem;
+    color: #0C5DC4;
 }
 body footer{
     background-color: #D7D7D7;
