@@ -1,0 +1,188 @@
+body{
+    background-color: #E7E7E7;
+}
+body header .head{
+    width: 100.2rem;
+    /* 取消额外的高度占用 */
+    /* height: 8.8rem; */
+    /* min-height: 8.8rem; */
+    min-width: 100.2rem;
+    margin: 0 auto;
+    background-color: #F4F5F7;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    background-image: url(http://futures.longrun.com.hk/share/header_bg.jpg);
+}
+body header .logo{
+    margin-top: 2.2rem;
+}
+body header .head div div span{
+    color: #6198CB;
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 2020796 */
+    src: url('//at.alicdn.com/t/font_2020796_bvvz4zmkdf9.eot');
+    src: url('//at.alicdn.com/t/font_2020796_bvvz4zmkdf9.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_2020796_bvvz4zmkdf9.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_2020796_bvvz4zmkdf9.woff') format('woff'),
+    url('//at.alicdn.com/t/font_2020796_bvvz4zmkdf9.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_2020796_bvvz4zmkdf9.svg#iconfont') format('svg');
+}
+.icon {
+    width: 1em; 
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+body header .head div div .cn,
+body header .head div div .cn:hover{
+    color: #4FD0F1;
+}
+body header .head div .nav{
+    margin-top: 3rem;
+    margin-right: 0.5rem;
+    display:flex;
+    line-height: 3rem;
+}
+body header .head div .nav a{
+    margin-right: 2rem;
+    font-size: 1.2rem;
+    }
+body header .head div .nav a:last-child{
+    margin: 0;
+}
+body header .head div .nav a:hover{
+    color: #69D2F2;
+    background:url(http://futures.longrun.com.hk/share/nav_arrow.png) no-repeat center bottom;
+}
+body header .head div .nav a.activer{
+    color: #69D2F2;
+    background:url(http://futures.longrun.com.hk/share/nav_arrow.png) no-repeat center bottom;
+}
+
+body header .navButton{
+    width: 100.2rem;
+/* 取消额外的高度占用 */
+    /* height: 8.8rem; */
+    /* min-height: 8.8rem; */
+    min-width: 100.2rem;
+
+    margin: 0 auto;
+    background-color: #F4F5F7;
+}
+body header .navButton .nav2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #1954A5;
+    color: #A5B6D4;
+}
+body header .navButton .nav2 a:hover{
+    color: #ffffff;
+}
+body header .navButton .nav2 a{
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+body .main{
+    width: 100rem;
+    margin: 0 auto;
+    height: 26.3rem;
+    border: #d4d4d4 0.1rem solid;
+    background-color: #F1F6F8;
+}
+body .main svg{
+    height: 24rem;
+    width: 7%;
+    float: left;
+    color: #D2D2D2;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    background-color: #F1F6F8;
+}
+body .main .banner{
+    float: left;
+    width: 100rem;
+    height: 26rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+body .main .banner div.navi{
+    width: 400%;
+    height: 24rem;
+    float: left;
+}
+body .main .banner .navi .navImg{
+    float: left;
+    height: 26rem;
+    width: 100rem;
+}
+body .time{
+    width: 100.2rem;
+    height: 5rem;
+    margin: 0 auto;
+    background-image: url(http://futures.longrun.com.hk/images/img_top.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    /* text-align: center;*/
+}
+body .time ul{
+    width: 100rem; 
+    height: 300%;
+    /* padding: 0.6rem 0.4rem 0rem 0.1rem; */
+}
+body .time ul .vi{
+    position: relative;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 1.4rem;
+    color: #1954A5;
+}
+body .body{
+    width: 97rem;
+    height: 62.7rem;
+    padding: 0rem 1.5rem;
+    background-color: #fff;
+    margin: 0 auto;
+    border: #d4d4d4 0.1rem solid;
+}
+body .body .leftbody{
+    padding: 0.5rem;
+    border-bottom: 0.1rem solid #dfdfdf;
+}
+body .body .subtitle{
+    font-size: 1rem;
+    color: #878787;
+}
+body .body .buttombody{
+    font-size: 1.2rem;
+}
+body footer{
+    background-color: #D7D7D7;
+    height: 5.5rem;
+    width: 100%;
+    margin-top: 3rem;
+}
+body footer div{
+    margin: 0 auto;
+    width: 96rem;
+    font-size: 1.1rem;
+    color: #6d6d6d;
+    padding: 10px 0 0 20px;
+}
+body footer div a strong{
+    float: right;
+}
