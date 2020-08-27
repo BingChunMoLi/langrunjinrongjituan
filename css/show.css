@@ -161,51 +161,21 @@ body .body{
     display: flex;
 }
 body .body .bodyLeft{
-    border: #DDD 0.1rem solid;
     height: 60rem;
     width:  60%;
     margin-top: 0.5rem;
     box-sizing: border-box;
+}
+body .body .bodyLeft .leftbody{
+    padding: 0.5rem;
+    border-bottom: 0.1rem solid #dfdfdf;
+}
+body .body .bodyLeft .subtitle{
+    font-size: 1rem;
+    color: #878787;
+}
+body .body .bodyLeft .buttombody{
     font-size: 1.2rem;
-}
-body .body .bodyLeft .newTable{
-    margin-top: 2rem;
-    padding-left: 2rem;
-}
-body .body .bodyLeft .newTable ul{
-    padding-bottom: 4rem;
-    border-bottom: 0.2rem solid #43b0ce;
-}
-body .body .bodyLeft .newTable ul li{
-    float: left;
-    height: 1.6rem;
-    background-color: #0F4DA2;
-    color: white;
-    padding: 0.8rem;
-    margin-right: 0.2rem;
-}
-body .body .bodyLeft .newTable ul li.active{
-    background-color: #43B0CE;
-}
-body .body .bodyLeft .newTable ul li:hover{
-    background-color: #43B0CE;
-}
-body .body .bodyLeft .newTable ul span{
-    margin-top: 1.5rem;
-    padding-right: 1rem;
-    float: right;
-}
-body .body .bodyLeft .newTable table{
-    margin-top: 1rem;
-}
-body .body .bodyLeft .newTable tbody tr td i.iconfont{
-    font-size: 0.2rem;
-    width: 0.1rem;
-    height: 0.1rem;
-}
-body .body .bodyLeft .newTable tbody tr td span.date{
-    float: right;
-    padding-right: 1rem;
 }
 body .body .bodyRight{
     height: 59.22rem;

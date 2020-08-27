@@ -149,7 +149,7 @@ body .time ul .vi{
     text-align: center;
     line-height: 4rem;
     font-size: 1.4rem;
-    color: #0C5DC4;
+    color: #1954A5;
 }
 body .body{
     width: 97rem;
@@ -158,118 +158,9 @@ body .body{
     background-color: #fff;
     margin: 0 auto;
     border: #d4d4d4 0.1rem solid;
-    display: flex;
 }
-body .body .bodyLeft{
-    border: #DDD 0.1rem solid;
-    height: 60rem;
-    width:  60%;
-    margin-top: 0.5rem;
-    box-sizing: border-box;
-    font-size: 1.2rem;
-}
-body .body .bodyLeft .newTable{
-    margin-top: 2rem;
-    padding-left: 2rem;
-}
-body .body .bodyLeft .newTable ul{
-    padding-bottom: 4rem;
-    border-bottom: 0.2rem solid #43b0ce;
-}
-body .body .bodyLeft .newTable ul li{
-    float: left;
-    height: 1.6rem;
-    background-color: #0F4DA2;
-    color: white;
-    padding: 0.8rem;
-    margin-right: 0.2rem;
-}
-body .body .bodyLeft .newTable ul li.active{
-    background-color: #43B0CE;
-}
-body .body .bodyLeft .newTable ul li:hover{
-    background-color: #43B0CE;
-}
-body .body .bodyLeft .newTable ul span{
-    margin-top: 1.5rem;
-    padding-right: 1rem;
-    float: right;
-}
-body .body .bodyLeft .newTable table{
-    margin-top: 1rem;
-}
-body .body .bodyLeft .newTable tbody tr td i.iconfont{
-    font-size: 0.2rem;
-    width: 0.1rem;
-    height: 0.1rem;
-}
-body .body .bodyLeft .newTable tbody tr td span.date{
-    float: right;
-    padding-right: 1rem;
-}
-body .body .bodyRight{
-    height: 59.22rem;
-    width: 30rem;
-    font-size: 1.2rem;
-    margin-left: 1rem;
-    box-sizing: border-box;
-}
-body .body .bodyRight h2{
-    border-bottom: #dfdfdf 0.1rem solid;
-    color: #282828;
-    padding: 0.7rem;
-    font-size: 2rem;
-}
-body .body .bodyRight #rili{
-    padding: 0.5rem;
-    font-size: 1.2rem;
-}
-body .body .bodyRight #rili tr td{
-    padding-left: 0.1rem;
-}
-body .body .bodyRight #rili tr td a{
-    color: #2D63AD;
-}
-body .body .bodyRight #rili tr td span{
-    float: right;
-}
-body .body .bodyRight>div{
-    margin-left: 1rem;
-}
-body .body .bodyRight div div{
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem;
-    margin-top: 0.5rem;
-}
-body .body .bodyRight div div>span{
-    color: #878787;
-}
-body .body .bodyRight div #rili{
-    width: 100%;
-    background-color: #E6E6E6;
-    text-align: center;
-    line-height: 2.3rem;
-}
-body .body .bodyRight div #rili tr td{
-    border: 0.1rem solid rgb(230, 230, 230);
-    width: 13.3%;
-    cursor: pointer;
-    margin: 0.1rem 0.1rem 0 0;
-    background-color: rgb(240, 240, 240);
-    color: rgb(85, 85, 85);
-}
-body .body .bodyRight div #rili tr td:hover{
-    background-color: #c60;
-    color: #FEFDFA;
-}
-body .body .bodyRight div #rili tr td.m{
-    background-color: #c60;
-    color: #FEFDFA;
-}
-body .body .bodyRight div .zx tr td{
-    padding: 0.4rem 1rem 0.4rem 0.4rem;
-    color: #0C5DC4;
+body .body table tr{
+    line-height: 4rem;
 }
 body footer{
     background-color: #D7D7D7;
