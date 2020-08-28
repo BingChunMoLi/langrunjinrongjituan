@@ -1,7 +1,7 @@
 /*
  * @Author: 冰彦糖
  * @Date: 2020-08-25 10:16:02
- * @LastEditTime: 2020-08-28 12:10:46
+ * @LastEditTime: 2020-08-28 15:25:51
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \浪润金融集团\js\index.js
@@ -159,7 +159,6 @@ function formatDate(time,format='YY-MM-DD hh:mm:ss'){
                 }
             }
         }
-
     }
     $('.leftRili').on('click',function () {
         d.setMonth(d.getMonth()-1);
@@ -169,10 +168,18 @@ function formatDate(time,format='YY-MM-DD hh:mm:ss'){
         d.setMonth(d.getMonth()+1);
         rili(d);
     })
-    $('.t1').on('click',function () {
-        $('tl').removeClass('active');
-        // this.addClass('active');
-    });
+    $(function() {
+        $(".newTable1 .ta1 .t1").click(function() {
+            $(this).addClass("active").siblings().removeClass("active");
+            $(".tb1 .table1").eq($(this).index()).show().siblings().hide();
+        })
+    })
+    $(function() {
+        $(".newTable2 .ta2 .t2").click(function() {
+            $(this).addClass("active").siblings().removeClass("active");
+            $(".tb2 .table2").eq($(this).index()).show().siblings().hide();
+        })
+    })
     window.onload = function(){
         
         rili(d);
