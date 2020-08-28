@@ -1,0 +1,217 @@
+
+body header .head{
+    width: 100.2rem;
+    min-width: 100.2rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+body header .logo{
+    margin-top: 2.2rem;
+}
+body header .head div div span{
+    color: #6198CB;
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 2020796 */
+    src: url('//at.alicdn.com/t/font_2020796_bvvz4zmkdf9.eot');
+    src: url('//at.alicdn.com/t/font_2020796_bvvz4zmkdf9.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_2020796_bvvz4zmkdf9.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_2020796_bvvz4zmkdf9.woff') format('woff'),
+    url('//at.alicdn.com/t/font_2020796_bvvz4zmkdf9.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_2020796_bvvz4zmkdf9.svg#iconfont') format('svg');
+}
+.icon {
+    width: 1em; 
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+body header .head div div .cn,
+body header .head div div .cn:hover{
+    color: #4FD0F1;
+}
+body header .head div .nav{
+    margin-top: 3rem;
+    margin-right: 0.5rem;
+    display:flex;
+    line-height: 3rem;
+}
+body header .head div .nav a{
+    margin-right: 2rem;
+    font-size: 1.2rem;
+    }
+body header .head div .nav a:last-child{
+    margin: 0;
+}
+body header .head div .nav a:hover{
+    color: #69D2F2;
+    background:url(http://futures.longrun.com.hk/share/nav_arrow.png) no-repeat center bottom;
+}
+body header .head div .nav a.activer{
+    color: #69D2F2;
+    background:url(http://futures.longrun.com.hk/share/nav_arrow.png) no-repeat center bottom;
+}
+
+body header .navButton{
+    background-color: #1954A5;
+}
+body header .navButton .nav2{
+    margin: 0 auto;
+    width: 100.2rem;
+    min-width: 100.2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #1954A5;
+    color: #A5B6D4;
+}
+body header .navButton .nav2 a:hover{
+    color: #ffffff;
+}
+body header .navButton .nav2 a{
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+body .xiangqing{
+    width: 100%;
+    height: 100%;
+    background: url(http://futures.longrun.com.hk/img/bg_1.jpg) no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    position: relative;
+}
+body .xiangqing .ner{
+    position: absolute;
+    height: 42rem;
+    top: 14.4rem;
+    left: 23rem;
+    width: 100rem;
+}
+body .xiangqing .ner .rczl .font {
+    background: url(http://futures.longrun.com.hk/img/all2_ner_font.png) no-repeat;
+    position: absolute;
+    top: 23rem;
+    height: 18.5rem;
+}
+body .xiangqing .ner .rczl .font .font2{
+    margin: 3rem;
+    width: 20rem;
+}
+body .xiangqing .ner .rczl .font .font2 h2{
+    font-size: 1.8rem;
+    color: #0f4ca5;
+}
+body .xiangqing .ner .rczl .font .font2 span{
+    color: #9b9b9b;
+    font-size: 1rem;
+}
+body .xiangqing .ner .fzzl{
+    margin-left: 25rem;
+    margin-top: -24rem;
+}
+body .xiangqing .ner .fzzl .font{
+    background: url(http://futures.longrun.com.hk/img/all2_ner_font.png) no-repeat;
+    position: absolute;
+    top: 23rem;
+    height: 18.5rem;
+}   
+body .xiangqing .ner .fzzl .font .font2{
+    margin: 3rem;
+    width: 20rem;
+}
+body .xiangqing .ner .fzzl .font .font2 h2{
+    font-size: 1.8rem;
+    color: #0f4ca5;
+}
+body .xiangqing .ner .fzzl .font .font2 span{
+    color: #9b9b9b;
+    font-size: 1rem;
+}
+body .xiangqing .ner .jyll{
+    margin-left: 50rem;
+    margin-top: -24rem;
+    width: 11rem;
+    height: 11rem;
+}
+body .xiangqing .ner .cx{
+    width: 11rem;
+    height: 11rem;
+    margin-left: 50rem;
+    margin-top: 10rem;
+}
+body .xiangqing .ner .shzr{
+    width: 22rem;
+    height: 20.3rem;
+    margin-left: 75rem;
+    margin-top: -33rem;
+    background-color: #1BB6E8;
+    
+}
+body .xiangqing .ner .shzr .bannerfont{
+    margin: 1rem;
+    padding: 1rem;
+    width: 18rem;
+    height: 18rem;
+}
+body .xiangqing .ner .shzr .bannerfont h2{
+    font-size: 1.8rem;
+    color: #0f4ba3;
+}
+body .xiangqing .ner .shzr .bannerfont span{
+    font-size: 0.8rem;
+    color: #ffffff;
+}
+body .xiangqing .ner .xzq{
+    width: 22rem;
+    height: 20.3rem;
+    background-color: #084CAD;
+}
+body .xiangqing .ner .xzq .bannerfont h2{
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+body .xiangqing .ner .xzq .bannerfont span{
+    font-size: 0.8rem;
+    color: #ffffff;
+}
+body .xiangqing .ner .zxdt{
+    margin-top: -4rem;
+    margin-left: 90rem;
+}
+body .xiangqing .ner .zxdt2{
+    margin-top: 20rem;
+    margin-left: 90rem;
+}
+body .xiangqing .ner .zxdt2 a .iconfont,
+body .xiangqing .ner .zxdt a .iconfont{
+    color: #ffffff;
+}
+body footer{
+    background-color: #D7D7D7;
+    height: 5.5rem;
+    width: 100%;
+    margin-top: 3rem;
+}
+body footer div{
+    margin: 0 auto;
+    width: 96rem;
+    font-size: 1.1rem;
+    color: #6d6d6d;
+    padding: 10px 0 0 20px;
+}
+body footer div a strong{
+    float: right;
+}
