@@ -1,7 +1,7 @@
 /*
  * @Author: 冰彦糖
  * @Date: 2020-08-25 10:16:02
- * @LastEditTime: 2020-08-26 22:17:05
+ * @LastEditTime: 2020-08-28 10:20:03
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \浪润金融集团\js\index.js
@@ -31,7 +31,6 @@
         if(navia == 860){
             navia = -2580;
         }
-        // navi.css('marginLeft',navia+'px');
         navi.animate({"marginLeft":navia},1000);
         if(navia == 2580){
             navia = 0;
@@ -42,7 +41,6 @@
         clearInterval(timer);
         navia -= 860;
         navi.animate({"marginLeft":navia},1000)
-        // navi.css('marginLeft',navia+'px');
         if(navia == -2580){
             navia = 0;
         }

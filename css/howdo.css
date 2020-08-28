@@ -154,41 +154,53 @@ body .xiangqing .ner .cx{
 }
 body .xiangqing .ner .shzr{
     width: 22rem;
-    height: 20.3rem;
+    height: 43rem;
     margin-left: 75rem;
-    margin-top: -33rem;
-    background-color: #1BB6E8;
-    
+    margin-top: -32rem;
+    overflow: hidden;
 }
-body .xiangqing .ner .shzr .bannerfont{
-    margin: 1rem;
+body .xiangqing .ner .shzr .lbt{
+    width: 22rem;
+}
+body .xiangqing .ner .shzr .lbt .bannerfont{
+    background-color: #1BB6E8;
     padding: 1rem;
     width: 18rem;
     height: 18rem;
 }
-body .xiangqing .ner .shzr .bannerfont h2{
+body .xiangqing .ner .shzr .lbt .bannerfont h2{
     font-size: 1.8rem;
     color: #0f4ba3;
 }
-body .xiangqing .ner .shzr .bannerfont span{
+body .xiangqing .ner .shzr .lbt .bannerfont span{
     font-size: 0.8rem;
     color: #ffffff;
 }
-body .xiangqing .ner .xzq{
-    width: 22rem;
-    height: 20.3rem;
+body .xiangqing .ner .shzr .xzq{
     background-color: #084CAD;
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 18rem;
+    height: 18rem;
 }
-body .xiangqing .ner .xzq .bannerfont h2{
+body .xiangqing .ner .shzr .xzq .contet{
+    width: 18rem;
+    height: 18rem;
+}
+body .xiangqing .ner .shzr .bannerfont .contet{
+    width: 18rem;
+    height: 18rem;
+}
+body .xiangqing .ner .shzr .xzq h2{
     font-size: 1.8rem;
     color: #ffffff;
 }
-body .xiangqing .ner .xzq .bannerfont span{
+body .xiangqing .ner .shzr .xzq span{
     font-size: 0.8rem;
     color: #ffffff;
 }
 body .xiangqing .ner .zxdt{
-    margin-top: -4rem;
+    margin-top: -28rem;
     margin-left: 90rem;
 }
 body .xiangqing .ner .zxdt2{
