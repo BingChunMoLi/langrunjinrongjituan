@@ -1,7 +1,7 @@
 /*
  * @Author: 冰彦糖
  * @Date: 2020-08-25 10:16:02
- * @LastEditTime: 2020-08-28 10:20:03
+ * @LastEditTime: 2020-08-28 12:10:46
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \浪润金融集团\js\index.js
@@ -169,10 +169,12 @@ function formatDate(time,format='YY-MM-DD hh:mm:ss'){
         d.setMonth(d.getMonth()+1);
         rili(d);
     })
+    $('.t1').on('click',function () {
+        $('tl').removeClass('active');
+        // this.addClass('active');
+    });
     window.onload = function(){
         
         rili(d);
         fun();
     }
-    
-    
